@@ -1,6 +1,6 @@
 $.ajaxPrefilter((options) => {
-  options.url = 'http://www.liulongbin.top:3007' + options.url
-  console.log(options)
+  options.url = 'http://big-event-api-t.itheima.net' + options.url
+  // console.log(options)
   if (options.url.includes('/my/')) {
     options.headers = {
       Authorization: localStorage.getItem('token'),
